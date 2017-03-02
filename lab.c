@@ -33,10 +33,10 @@ int amount_of_income(int length, int dep_amount) {
 
 int main() {
     int length, dep_amount;
-    printf("enter time to deposit: \n");
-    scanf("%i", &length);
-    printf("enter sum to deposit: \n");
-    scanf("%i", &dep_amount);
+    printf("enter lenght to deposit: \n");
+    scanf("%d", &length);
+    printf("enter dep_amount to deposit: \n");
+    scanf("%d", &dep_amount);
     if (dep_amount >= 10000) {
         if (length >= 0) {
             if (length <= 365) {
@@ -58,8 +58,10 @@ int main() {
         } else {
             printf(" and length.\n");
         }
+	return 1;
     }
-    printf("sum at the end of: ");
-    printf("%i", amount_of_income(length, dep_amount));
+    printf("dep_amount at the end of: ");
+    printf("%d \n", amount_of_income(length, dep_amount));
+    printf("net profit:  %d \n", amount_of_income(length, dep_amount)-dep_amount);
     return 0;
 }
