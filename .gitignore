@@ -1,0 +1,4 @@
+*.o
+.lab.c.swp
+lab.c~
+#lab.c#
